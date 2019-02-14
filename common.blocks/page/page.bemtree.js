@@ -5,9 +5,6 @@ block('page')({
         },
         {
             block: 'body'
-        },
-        {
-            block: 'footer'
         }
     ]
 });

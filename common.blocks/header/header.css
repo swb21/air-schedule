@@ -1,0 +1,8 @@
+.header {
+    background: #fff;
+}
+
+.header__logo {
+    align-self: center;
+    padding-left: 20px;
+}

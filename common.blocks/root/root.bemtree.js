@@ -30,11 +30,7 @@ block('root')({
                 { elem: 'meta', attrs: { property: 'og:locale', content: og.locale || 'en_US' } },
                 { elem: 'meta', attrs: { property: 'og:type', content: 'website' } },
                 { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } }
-            ],
-            mods: {
-                theme: 'islands',
-                view: data.view
-            }
+            ]
         };
     }
 });

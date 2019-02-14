@@ -61,16 +61,21 @@ app.get('/ping/', function(req, res) {
 });
 
 app.get('/', function(req, res) {
+    let hello = 'hello';
+    let world = 'world';
+
     render(req, res, {
         view: 'page-index',
-        title: 'Main page',
+        title: 'Авиа.Табло',
         meta: {
-            description: 'Page description',
+            description: 'Расписание полетов какого-то аэропорта',
             og: {
                 url: 'https://site.com',
                 siteName: 'Site name'
             }
-        }
+        },
+        hello: hello,
+        world: world
     })
 });
 

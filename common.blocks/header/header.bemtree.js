@@ -1,7 +1,13 @@
 block('header')({
     content: () => [
         {
-            block: 'logo'
+            elem: 'layout',
+            content: [
+                {
+                    block: 'logo',
+                    mix: { block: 'header', elem: 'logo' }
+                }
+            ]
         }
     ]
 });
