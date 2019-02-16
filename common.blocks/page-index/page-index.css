@@ -1,0 +1,7 @@
+.page-index__schedule {
+    width: calc(100% - 80px);
+    max-width: 1000px;
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 80px auto 0;
+}

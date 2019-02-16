@@ -1,0 +1,4 @@
+.schedule__schedule-types {
+    display: flex;
+    justify-content: space-around;
+}

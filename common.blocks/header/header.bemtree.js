@@ -5,7 +5,10 @@ block('header')({
             content: [
                 {
                     block: 'logo',
-                    mix: { block: 'header', elem: 'logo' }
+                    mix: [
+                        { block: 'header', elem: 'logo' },
+                        { block: 'link' }
+                    ]
                 }
             ]
         }

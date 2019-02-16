@@ -1,6 +1,7 @@
 ({
     shouldDeps: [
+        'link',
+        'logo',
         { block: 'header', elem: 'layout'},
-        { block: 'logo'},
     ]
 })
