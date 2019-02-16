@@ -1,24 +1,25 @@
 block('schedule').elem('schedule-types').content()(function() {
-    return [
+    const scheduleTypes = [
         {
-            block: 'button',
-            mods: {
-                type: 'link',
-                theme: 'islands',
-                size: 'l'
-            },
-            url: '/?type=departures',
-            text: 'Отправления'
+            text: 'Отправления',
+            url: '/?type=departures'
         },
         {
+            text: 'Прибытия',
+            url: '/?type=arrivals'
+        }
+    ];
+
+    return scheduleTypes.map(function(type) {
+        return {
             block: 'button',
             mods: {
                 type: 'link',
                 theme: 'islands',
                 size: 'l'
             },
-            url: '/?type=arrivals',
-            text: 'Прибытия'
+            text: type.text,
+            url: type.url
         }
-    ]
+    });
 });

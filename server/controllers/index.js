@@ -7,9 +7,7 @@ function getContent(req, res) {
 
     let hello = 'Hello';
     let world = 'World';
-    console.log('-------------------------------');
-    console.log(scheduleType);
-    console.log('-------------------------------');
+
     render(req, res, {
         view: 'page-index',
         title: 'Авиа.Табло',
